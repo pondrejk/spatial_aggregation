@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   prepareData();
 
   // setting map
-  map = L.map("map-content", { maxZoom: 15 });
+  map = L.map("map-content", { maxZoom: 25 });
   map.fitBounds(extent);
 
   var CartoDB_Positron = L.tileLayer(
