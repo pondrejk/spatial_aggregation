@@ -79,16 +79,16 @@ select {
 /* markercluster */
 
 .marker-cluster {
-  background-color: rgba(177, 0, 38, 0.6);
+  background-color: rgba(177, 0, 38, 0);
   background-clip: padding-box;
   border-radius: 20px;
 }
 .marker-cluster div {
   background-color: rgba(177, 0, 38, 0.6);
-  width: 30px;
-  height: 30px;
-  margin-left: 5px;
-  margin-top: 5px;
+  width: 15px;
+  height: 15px;
+  margin-left: 1px;
+  margin-top: 0px;
   color: white;
 
   text-align: center;
@@ -97,7 +97,7 @@ select {
 }
 
 .marker-cluster span {
-  line-height: 30px;
+  line-height: 15px;
 }
 
 .leaflet-cluster-anim .leaflet-marker-icon,

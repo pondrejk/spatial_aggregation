@@ -70,7 +70,7 @@ const prepareData = () => {
   crimePoints = crime.points.map(point => {
     return L.circleMarker(
       point["c"],
-      Object.assign({}, point, circleStyle(point, "#b10026", 5))
+      Object.assign({}, point, circleStyle(point, "#b10026", 4))
     ).bindPopup(
       "<div><h4>crime id: " +
         point.id +
@@ -103,10 +103,10 @@ const parseTextAreaValue = textAreaId => {
 
 const circleStyle = (props, color, radius) => {
   return {
-    //fillColor: ["#ffffcc", "#a1dab4", "#41b6c4", "#2c7fb8", "#253494"][
-    //  props.cid
-    //],
-    fillColor: color,
+    fillColor: ["#ffffcc", "#a1dab4", "#41b6c4", "#2c7fb8", "#253494"][
+      props.cid
+    ],
+    //fillColor: color,
     color: "black",
     weight: 0.5,
     fillOpacity: 1,
